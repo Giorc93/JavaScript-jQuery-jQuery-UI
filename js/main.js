@@ -103,4 +103,14 @@ $(document).ready(function () {
   ) {
     $("#accordion").accordion();
   }
+
+  if (
+    window.location.href ==
+    "file:///home/gio/Documentos/VisualStudio/JavaScript/jQuery-Project/clock.html"
+  ) {
+    setInterval(function () {
+      var clock = moment().format("hh:mm:ss");
+      $("#clock").html(clock);
+    }, 1000);
+  }
 });

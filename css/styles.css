@@ -37,7 +37,6 @@ body {
 }
 
 header {
-  background: lightcyan;
   height: auto;
 }
 
@@ -47,7 +46,8 @@ header {
 }
 
 #navbar {
-  background: lightgreen;
+  background: lightgray;
+  border-radius: 8px;
 }
 
 #navbar ul li {
@@ -56,6 +56,8 @@ header {
   padding-right: 5px;
   padding-left: 5px;
   transition: 300ms all;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 #navbar ul li a {
@@ -64,7 +66,7 @@ header {
 }
 
 #navbar ul li:hover {
-  background: green;
+  background: #736b69;
 }
 
 #navbar ul li a:visited {
@@ -92,25 +94,23 @@ bx-viewport {
 }
 
 #content {
-  background: lightslategrey;
+  background: white;
   padding: 2%;
   margin-top: 15px;
 }
 
 #posts {
-  background: lightseagreen;
   width: 70%;
   float: left;
 }
 
 #box {
-  background: lightseagreen;
   width: 70%;
   float: left;
 }
 
 #post {
-  background: lightyellow;
+  background: whitesmoke;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -184,4 +184,18 @@ footer {
   background: rgba(51, 51, 51, 0.7);
   margin: 0 auto;
   line-height: 25px;
+}
+
+/*Clock*/
+
+#clock {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid black;
+  width: 25%;
+  margin: 0 auto;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 100%;
 }

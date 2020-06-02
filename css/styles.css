@@ -103,6 +103,12 @@ bx-viewport {
   float: left;
 }
 
+#box {
+  background: lightseagreen;
+  width: 70%;
+  float: left;
+}
+
 #post {
   background: lightyellow;
   padding: 5px;

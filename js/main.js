@@ -96,4 +96,11 @@ $(document).ready(function () {
       location.reload();
     });
   }
+
+  if (
+    window.location.href ==
+    "file:///home/gio/Documentos/VisualStudio/JavaScript/jQuery-Project/about.html"
+  ) {
+    $("#accordion").accordion();
+  }
 });

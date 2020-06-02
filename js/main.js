@@ -97,20 +97,19 @@ $(document).ready(function () {
     });
   }
 
-  if (
-    window.location.href ==
-    "file:///home/gio/Documentos/VisualStudio/JavaScript/jQuery-Project/about.html"
-  ) {
+  if (window.location.href.indexOf("about") > -1) {
     $("#accordion").accordion();
   }
 
-  if (
-    window.location.href ==
-    "file:///home/gio/Documentos/VisualStudio/JavaScript/jQuery-Project/clock.html"
-  ) {
+  if (window.location.href.indexOf("clock") > -1) {
     setInterval(function () {
       var clock = moment().format("hh:mm:ss");
       $("#clock").html(clock);
     }, 1000);
+  }
+
+  if (window.location.href.indexOf("contact") > -1) {
+    $("#birthdate").datepicker();
+    $("#ctForm").validate();
   }
 });
